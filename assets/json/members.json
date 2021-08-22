@@ -1,0 +1,82 @@
+ [
+  {
+    "id": 1,
+    "name": "アイドナ",
+    "pic": "idano",
+    "gender": "female",
+    "msg": "あたしはいい人です。",
+    "likes": 0
+  },
+  {
+    "id": 2,
+    "name": "ナナ",
+    "pic": "nana",
+    "gender": "female",
+    "msg": "好きな人と好きなことする。",
+    "likes": 0
+  },
+  {
+    "id": 3,
+    "name": "マリア",
+    "pic": "maria",
+    "gender": "female",
+    "msg": "私の仕事はメキシコ料理を作ることです。",
+    "likes": 0
+  },
+  {
+    "id": 4,
+    "name": "ケリー",
+    "pic": "kelly",
+    "gender": "female",
+    "msg": "あたしは社交的な人です。",
+    "likes": 0
+  },
+  {
+    "id": 5,
+    "name": "ジュリア",
+    "pic": "julia",
+    "gender": "female",
+    "msg": "私はビーチに行くのが好きです。",
+    "likes": 0
+  },
+  {
+    "id": 6,
+    "name": "ピーター",
+    "pic": "peter",
+    "gender": "male",
+    "msg": "老人ホームに入居中です。",
+    "likes": 0
+  },
+  {
+    "id": 7,
+    "name": "ネート",
+    "pic": "nate",
+    "gender": "male",
+    "msg": "わしはハワイに住んでいる。 ",
+    "likes": 0
+  },
+  {
+    "id": 8,
+    "name": "マイク",
+    "pic": "mike",
+    "gender": "male",
+    "msg": "僕は世界中を旅するのが大好きです。",
+    "likes": 0
+  },
+  {
+    "id": 9,
+    "name": "スコット",
+    "pic": "scott",
+    "gender": "male",
+    "msg": "日本語を勉強しています。日本が大好き！",
+    "likes": 0
+  },
+  {
+    "id": 10,
+    "name": "ジェフ",
+    "pic": "jeff",
+    "gender": "male",
+    "msg": "おれを選んでくれ！",
+    "likes": 0
+  }
+]

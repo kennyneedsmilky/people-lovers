@@ -1,0 +1,201 @@
+/* ケンミル */ /* 神様最高 */
+
+:root {
+  /* Colors */
+  --color-default-01: #ffffff;
+  --color-default-02: #808080;
+  --color-default-03: #000000;
+  --color-default-04: #fcc9af;
+  --color-default-05: #ff8e72;
+  --color-default-06: #ed6a5e;
+  --color-default-07: #95f5d8;
+  --color-default-08: #69cfc5;
+
+  /* Padding */
+  --padding-default: 0.25rem;
+  /* Border */
+  --border-default: 1px solid #ffffff;
+  --border-radius-default: 15px;
+  /* Shadows */
+  --shadow-default: 3px 3px 3px #00000080;
+  /* Margin */
+  --margin-default: 0.25rem;
+  /* Font */
+  --font-family-default: Arial, Helvetica, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  padding: var(--padding-default);
+  margin: var(--margin-default);
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* ボディー */
+body {
+  background-color: var(--color-default-03);
+  color: var(--color-default-03);
+  font-family: var(--font-family-default);
+}
+
+#app {
+  background-color: var(--color-default-04);
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1500;
+  padding: var(--padding-default);
+  background-color: var(--color-default-05);
+  box-shadow: var(--shadow-default);
+  color: var(--color-default-01);
+  width: 100%;
+  max-width: 700px;
+  height: 4rem;
+}
+
+.header__links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header a {
+  padding: var(--padding-default);
+  margin: var(--margin-default);
+  color: var(--color-default-01);
+}
+
+.header a:hover {
+  color: var(--color-default-03);
+}
+
+.generic-card {
+  padding: var(--padding-default);
+  border-radius: var(--border-radius-default);
+  background-color: var(--color-default-01);
+  box-shadow: var(--shadow-default);
+  margin: 0.5rem;
+}
+
+.user-card {
+  display: flex;
+  align-items: flex-start;
+  padding: var(--padding-default);
+  border-radius: 15px 0 15px 0;
+  background-color: var(--color-default-01);
+  box-shadow: var(--shadow-default);
+  margin: 0.5rem;
+  height: 175px;
+}
+
+.user-card__status-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.user-card__pic {
+  padding: var(--padding-default);
+  border-radius: var(--border-radius-default);
+  margin: var(--margin-default);
+}
+
+.user-card__like-btn {
+  border: none;
+  background-color: var(--color-default-01);
+  width: 64px;
+  height: 64px;
+  font-size: 2.5rem;
+  color: var(--color-default-06);
+}
+
+.user-card__like-btn:hover {
+  color: var(--color-default-05);
+}
+
+.user-card__like-btn i {
+  user-select: none;
+  text-shadow: var(--shadow-default);
+}
+
+.user-card__like-btn:active i {
+  text-shadow: 0 0 0 black;
+}
+
+.user-card__info-cont {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.user-card__profile-cont {
+  flex: 1;
+  padding: var(--padding-default);
+  border-radius: 0 15px 0 0;
+  background-color: var(--color-default-07);
+  margin: var(--margin-default);
+  overflow: hidden;
+}
+
+.user-card__likes-cont {
+  padding: var(--padding-default);
+  border-radius: 0 0 15px 0;
+  background-color: var(--color-default-08);
+  margin: var(--margin-default);
+  width: 95%;
+  color: var(--color-default-01);
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.router-view {
+  padding-top: 4rem;
+}
+
+/* このクラスを使用すれば、物事を非表示にします。 */
+.hidden {
+  display: none;
+}
+
+/* ホバー */
+@media (hover: hover) {
+  /* 下に書いてください ↓ */
+}
+
+/* モバイル */
+@media only screen and (max-width: 700px) {
+  /* 下に書いてください ↓ */
+}
