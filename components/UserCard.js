@@ -10,7 +10,7 @@ app.component("user-card", {
             <div class="user-card__profile-cont">
                 <h3>{{ member.name }}</h3>
                 <p>
-                    <i v-if="gender === 'female'" class="fas fa-female"></i>
+                    <i v-if="member.gender === 'female'" class="fas fa-female"></i>
                     <i v-else class="fas fa-male"></i> {{ member.msg }}
                 </p>
             </div>
@@ -18,7 +18,10 @@ app.component("user-card", {
         </div>
     </div>
     `,
-    props: ["member", "members"],
+    props: {
+        member: Object, 
+        members: Object
+    },
     methods: {
         like(memberId) {
             const member = this.members.find(member => member.id === memberId);
