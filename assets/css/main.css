@@ -130,6 +130,7 @@ body {
   padding: var(--padding-default);
   border-radius: var(--border-radius-default);
   margin: var(--margin-default);
+  cursor: pointer;
 }
 
 .user-card__like-btn {
@@ -179,6 +180,34 @@ body {
   color: var(--color-default-01);
   font-weight: bold;
   overflow: hidden;
+}
+
+.pic-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2000;
+  background-color: #000000b0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.pic-modal__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius-default);
+  background-color: #ffffff80;
+  width: 250px;
+  height: 250px;
+}
+
+.pic-modal__pic {
+  border-radius: var(--border-radius-default);
+  width: 100%;
 }
 
 .router-view {

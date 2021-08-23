@@ -3,7 +3,7 @@ app.component("user-card", {
     template: `
     <div class="user-card">
         <div class="user-card__status-cont">
-            <img class="user-card__pic" :src="'./assets/img/profile_pics/profile_' + member.pic + '.svg'" alt="user-card__pic">
+            <img class="user-card__pic" :src="'./assets/img/profile_pics/profile_' + member.pic + '.svg'" alt="user-card__pic" @click="openModal(member.pic)">
             <button class="user-card__like-btn" @click="like(member.id)"><i class="ppl-love"></i></button>
         </div>
         <div class="user-card__info-cont">
@@ -20,12 +20,17 @@ app.component("user-card", {
     `,
     props: {
         member: Object, 
-        members: Object
+        members: Object,
+        modal: Object
     },
     methods: {
         like(memberId) {
             const member = this.members.find(member => member.id === memberId);
             member.likes++;
+        },
+        openModal(pic) {
+            this.modal.open = true;
+            this.modal.pic = pic;
         }
     }
 })
